@@ -2,8 +2,84 @@
 <html>
     <head>
         <title>enrolment form</title>
+        <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
     <body>
-        <p>HELLO WORLD</p>
+        <h1><Center>COURSE ENROLMENT FORM</Center></h1>
+        <form>
+            <label for="fname">FIRST NAME:</label>
+            <input type="text" 
+            id="fname"
+            name="fname"
+            placeholder="Enter your First Name"
+            pattern="/^[a-z ,.'-]+$/i"
+            required />
+            <br><br>
+            <label for="lname">LAST NAME:</label>
+            <input type="text" id="lname" name="lname" 
+            placeholder="Enter your First Name"
+            pattern="/^[a-z ,.'-]+$/i"
+            required/>
+            <br><br>
+            <label for="rno">REGISTER NUMBER:</label>
+            <input type="text" 
+            id="rno"
+            name="rno"
+            placeholder="Enter your Register number"
+            pattern="[0-9]{10}"
+            required />
+            <br><br>
+            <label for="rno">MOBILE NUMBER:</label>
+            <input type="text" 
+            id="no"
+            name="no"
+            placeholder="Enter your Mobile number"
+            pattern="[0-9]{10}"
+            required />
+            <br><br>
+            <label for="gender">GENDER:</label>
+            <input type="radio" name="male"/>MALE
+            <input type="radio" name="male"/>FEMALE<br>
+            <br>
+            <label for="email">EMAIL ID:</label>
+            <input type="text" 
+            id="email"
+            name="email"
+            placeholder="Enter your email id"
+            patter="[a-z][0-9]+@+[a-z]"
+            required />
+            <br><br>
+            <label for="dep">DEPARTMENT :</label>
+            <input type="radio" name="dep">CSE
+            <input type="radio" name="dep">ECE
+            <input type="radio" name="dep">EEE
+            <input type="radio" name="dep">MECH
+            <br><br>
+            <label for="year">YEAR:</label>
+            <select id="year" name="year">
+                <option value="FIRST">FIRST</option>
+                <option value="SECOND">SECOND</option>
+                <option value="THIRD">THIRD</option>
+                <option value="FOURTH">FOURTH</option>
+            </select><br><br>
+            <label for="lk">LANGUAGES KNOWN:</label>
+            <input type="checkbox" id="lk" name="lk">C
+            <input type="checkbox" id="lk" name="lk">C++
+            <input type="checkbox" id="lk" name="lk">PYTHON
+            <input type="checkbox" id="lk" name="lk">JAVA
+            <br><br>
+            <label for="avsl">AVAILABLE SLOTS:</label>
+            <select id="avsl" name="avsl">
+
+                <option value="ten">10AM</option>
+                <option value="two">2PM</option>
+                <option value="two">5PM</option>
+            </select>
+
+            
+            <br><br>
+         
+            <button value="button">ENROLL</button>
+        </form>
     </body>
 </html>
