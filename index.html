@@ -5,9 +5,9 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
     <body>
-        <h1><Center>COURSE ENROLMENT FORM</Center></h1>
+        <h1 class="heading">COURSE ENROLMENT FORM</h1><br>
         <form>
-            <label for="fname">FIRST NAME:</label>
+            <label for="fname" class="name" id="fn">FIRST NAME:</label>
             <input type="text" 
             id="fname"
             name="fname"
@@ -15,13 +15,13 @@
             pattern="/^[a-z ,.'-]+$/i"
             required />
             <br><br>
-            <label for="lname">LAST NAME:</label>
+            <label for="lname" class="name" id="ln">LAST NAME:</label>
             <input type="text" id="lname" name="lname" 
             placeholder="Enter your First Name"
             pattern="/^[a-z ,.'-]+$/i"
             required/>
             <br><br>
-            <label for="rno">REGISTER NUMBER:</label>
+            <label for="rno" class="name" id="rn">REGISTER NUMBER:</label>
             <input type="text" 
             id="rno"
             name="rno"
@@ -29,7 +29,7 @@
             pattern="[0-9]{10}"
             required />
             <br><br>
-            <label for="rno">MOBILE NUMBER:</label>
+            <label for="rno" class="name" id="mn">MOBILE NUMBER:</label>
             <input type="text" 
             id="no"
             name="no"
@@ -37,11 +37,11 @@
             pattern="[0-9]{10}"
             required />
             <br><br>
-            <label for="gender">GENDER:</label>
+            <label for="gender" class="name" id="gr">GENDER:</label>
             <input type="radio" name="male"/>MALE
             <input type="radio" name="male"/>FEMALE<br>
             <br>
-            <label for="email">EMAIL ID:</label>
+            <label for="email" class="name" id="ei">EMAIL ID:</label>
             <input type="text" 
             id="email"
             name="email"
@@ -49,26 +49,26 @@
             patter="[a-z][0-9]+@+[a-z]"
             required />
             <br><br>
-            <label for="dep">DEPARTMENT :</label>
+            <label for="dep" class="name" id="dept">DEPARTMENT :</label>
             <input type="radio" name="dep">CSE
             <input type="radio" name="dep">ECE
             <input type="radio" name="dep">EEE
             <input type="radio" name="dep">MECH
             <br><br>
-            <label for="year">YEAR:</label>
+            <label for="year" class="name" id="yr">YEAR:</label>
             <select id="year" name="year">
                 <option value="FIRST">FIRST</option>
                 <option value="SECOND">SECOND</option>
                 <option value="THIRD">THIRD</option>
                 <option value="FOURTH">FOURTH</option>
             </select><br><br>
-            <label for="lk">LANGUAGES KNOWN:</label>
+            <label for="lk" class="name" id="lan">LANGUAGES KNOWN:</label>
             <input type="checkbox" id="lk" name="lk">C
             <input type="checkbox" id="lk" name="lk">C++
             <input type="checkbox" id="lk" name="lk">PYTHON
             <input type="checkbox" id="lk" name="lk">JAVA
             <br><br>
-            <label for="avsl">AVAILABLE SLOTS:</label>
+            <label for="avsl" class="name" id="avail">AVAILABLE SLOTS:</label>
             <select id="avsl" name="avsl">
 
                 <option value="ten">10AM</option>
@@ -78,11 +78,11 @@
 
             
             <br><br>
-            <label for="resume">Upload your resume:
-            </label><br>
+            <label for="resume" class="name" id="up">UPLOAD YOUR RESUME:
+            </label>
             <input type="file" id="myFile" name="myfile" accept=".pdf"  required="required">
-            <br>
-            <button value="button">ENROLL</button>
+            <br><br>
+            <button value="button" class="btn" id="bt">ENROLL</button>
         </form>
     </body>
 </html>
